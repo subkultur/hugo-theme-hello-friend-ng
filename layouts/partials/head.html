@@ -8,6 +8,9 @@
 <meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
 <meta name="google-site-verification" content="rySra5xwQpUqHvdJ_OYBIUujem2X6g1u-3C1Jz8ryVs" />
 <link rel="canonical" href="{{ .Permalink }}" />
+{{ if .Site.Params.afavicon }}
+<link rel="icon" type="image/x-icon" href="{{ .Site.Params.afavicon }}">
+{{ end }}
 
 {{ block "title" . }}
     <title>
